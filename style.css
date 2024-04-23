@@ -16,6 +16,18 @@ body {
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.5), transparent);
 }
 
+video::-internal-media-controls-download-button { 
+    display:none; 
+} 
+ 
+video::-webkit-media-controls-enclosure { 
+    overflow:hidden; 
+} 
+ 
+video::-webkit-media-controls-panel { 
+    width: calc(100% + 30px);
+}
+
 #animatedVideo {
     position: absolute;
     top: 0;
