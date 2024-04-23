@@ -20,7 +20,7 @@ function endInteraction(event) {
 }
 
 
-window.addEventListener('mousedown', startInteraction);
-window.addEventListener('mouseup', endInteraction);
-window.addEventListener('touchstart', startInteraction);
-window.addEventListener('touchend', endInteraction);
+window.addEventListener('mousedown', startInteraction, { passive: false });
+window.addEventListener('mouseup', endInteraction, { passive: false });
+window.addEventListener('touchstart', startInteraction, { passive: false });
+window.addEventListener('touchend', endInteraction, { passive: false });
